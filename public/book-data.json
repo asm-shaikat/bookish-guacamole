@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://example.com/images/to-kill-a-mockingbird.jpg",
+      "review": "A profound novel that explores racial injustice and moral growth in a small town.",
+      "totalPages": 281,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Classic", "Courtroom Drama", "Social Issues"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 2,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://example.com/images/1984.jpg",
+      "review": "A chilling portrayal of a dystopian society under constant surveillance and control.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Dystopian Fiction",
+      "tags": ["Political", "Totalitarianism", "Philosophical"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://example.com/images/the-great-gatsby.jpg",
+      "review": "A timeless story of wealth, love, and tragedy set in the Jazz Age.",
+      "totalPages": 180,
+      "rating": 4.4,
+      "category": "Classic Fiction",
+      "tags": ["American Dream", "Romance", "Tragedy"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 4,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://example.com/images/pride-and-prejudice.jpg",
+      "review": "A witty and insightful look at the manners and matrimonial machinations of early 19th-century England.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Romance",
+      "tags": ["Social Commentary", "Love Story", "Comedy"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://example.com/images/catcher-in-the-rye.jpg",
+      "review": "An unforgettable tale of adolescent angst and alienation.",
+      "totalPages": 214,
+      "rating": 4.3,
+      "category": "Young Adult Fiction",
+      "tags": ["Coming of Age", "Identity", "Isolation"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 6,
+      "bookName": "Moby Dick",
+      "author": "Herman Melville",
+      "image": "https://example.com/images/moby-dick.jpg",
+      "review": "A complex, multi-layered story of obsession, revenge, and the human struggle against nature.",
+      "totalPages": 635,
+      "rating": 4.2,
+      "category": "Adventure",
+      "tags": ["Epic", "Sea Voyage", "Philosophical"],
+      "publisher": "Harper & Brothers",
+      "yearOfPublishing": 1851
+    }
+  ]
+  
