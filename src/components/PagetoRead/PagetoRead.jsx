@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from "react";
+import { BookReadContext } from "../ToRead";
 
 const PagetoRead = () => {
-    return (
-        <div className='bg-white text-black'>
-            <p>Welcome to PagetoRead</p>
-        </div>
-    );
+  
+
+  return (
+    <>
+        <h1 className="text-black p-2">Welcome to Page to read</h1>
+    </>
+  );
 };
 
 export default PagetoRead;

@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { BookReadContext } from "../ToRead"; // Import the correct context
 
 const BookDetails = () => {
   const { id } = useParams();
   const [book, setBook] = useState(null);
+  const { bookRead,handleBookRead,wishedBook,handleWishedBook } = useContext(BookReadContext); // Use BookReadContext instead of ToRead
 
   useEffect(() => {
     fetch("/book-data.json")
@@ -50,17 +52,26 @@ const BookDetails = () => {
             ))}
           </div>
           <div className="border border-dashed my-4"></div>
-          <p className="text-md mb-4">Total Pages: <span className="font-semibold">{book.totalPages}</span></p>
-          <p className="text-md mb-4">Publisher: <span className="font-semibold">{book.publisher}</span></p>
-          <p className="text-md mb-2">
-            Year of Publishing: <span className="font-semibold">{book.yearOfPublishing}</span>
+          <p className="text-md mb-4">
+            Total Pages: <span className="font-semibold">{book.totalPages}</span>
           </p>
-          <p className="text-md mb-4">Rating: <span className="font-semibold">{book.rating}</span></p>
+          <p className="text-md mb-4">
+            Publisher: <span className="font-semibold">{book.publisher}</span>
+          </p>
+          <p className="text-md mb-2">
+            Year of Publishing:{" "}
+            <span className="font-semibold">{book.yearOfPublishing}</span>
+          </p>
+          <p className="text-md mb-4">
+            Rating: <span className="font-semibold">{book.rating}</span>
+          </p>
         </div>
       </div>
       <div>
-        <button className="btn bg-white mr-2">Read</button>
-        <button className="btn btn-accent text-white">Wishlish</button>
+        <button className="btn bg-white mr-2" onClick={() => handleBookRead(book.bookId)}>
+          Read
+        </button>
+        <button className="btn btn-accent text-white" onClick={() => handleWishedBook(book.bookId)}>Wishlist</button>
       </div>
     </>
   );
