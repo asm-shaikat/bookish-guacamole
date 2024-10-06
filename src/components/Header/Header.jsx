@@ -75,7 +75,9 @@ const Header = () => {
             {navList}
           </ul>
         </div>
-        <p className="text-3xl font-bold text-green-600 lg:ml-4">Bookish</p>
+        <NavLink to="/">
+          <p className="text-3xl font-bold text-green-600 lg:ml-4">Bookish</p>
+        </NavLink>
       </div>
 
       <div className="navbar-center hidden lg:flex">
@@ -84,12 +86,11 @@ const Header = () => {
         </ul>
       </div>
 
-      {/* Sign In and Sign Up for desktop */}
       <div className="navbar-end hidden lg:flex">
-        <NavLink to="/signin" className="btn bg-green-500 text-white hover:bg-green-600 px-4 py-2 mx-2">
+        <NavLink className="btn bg-green-500 text-white hover:bg-green-600 px-4 py-2 mx-2">
           Sign In
         </NavLink>
-        <NavLink to="/signup" className="btn bg-cyan-500 text-white hover:bg-cyan-600 px-4 py-2">
+        <NavLink className="btn bg-cyan-500 text-white hover:bg-cyan-600 px-4 py-2">
           Sign Up
         </NavLink>
       </div>

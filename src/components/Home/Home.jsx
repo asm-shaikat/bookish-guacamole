@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Books from "../Books/Books";
 import ToRead from "../ToRead";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
             
@@ -15,9 +16,11 @@ const Home = () => {
               </p>
             </div>
             <div className="mt-4 md:mt-2">
+            <NavLink to="/listed-books">
               <button className="btn btn-success text-white m-2">
                 View The List
               </button>
+            </NavLink>
             </div>
           </div>
           <div className="w-full md:w-2/4 flex justify-center md:justify-end mt-4 md:mt-0">
